@@ -1,0 +1,26 @@
+%html
+	%head
+		%title Picture Frame Poop Show
+		%link(		rel="stylesheet" 
+							type="text/css" 
+							href="styles/pframe.css")
+		%link(		rel="stylesheet"
+							type="text/css"
+							href="http://fonts.googleapis.com/css?family=Amatic+SC:400,700&effect=destruction")
+		%script(	type="text/javascript" 
+							src="javascripts/dropbox.js")
+		%body
+		#content
+			%h1 Picture Frame Uploader
+			= yield
+			#menu
+				&nbsp;|&nbsp;
+				%a(		href="/"
+							class="font-effect-destruction") Home
+				&nbsp;|&nbsp;
+				%a(		href="/upload"
+							class="font-effect-destruction") Upload
+				&nbsp;|&nbsp;
+				%a(		href="/gallery"
+							class="font-effect-destruction") Gallery
+				&nbsp;|&nbsp;

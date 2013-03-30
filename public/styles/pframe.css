@@ -1,0 +1,114 @@
+body {
+	background: url('/images/wallpaper_tube.jpg') #000;
+	background-repeat:repeat-x;
+	margin: 50px;
+	padding: 0px;
+	text-align: center;
+}
+
+#content {
+	width: 520px;
+	height: 700px;
+	margin: 0px auto;
+	text-align: center;
+	padding: 0px;
+	font-family: "Amatic SC";
+	font-weight: 700;
+	font-size: 36px;
+	position: relative;
+}
+
+#content p {
+	padding: 45px;
+	margin: 45px;
+}
+
+#menu {
+  width: 520px;
+	border-top-width: 4px;
+	border-bottom-width: 4px;
+	border-top-style: double;
+	border-bottom-style: double;
+  border-top-color: #000;
+  border-bottom-color: #000;
+	margin-top: 2px;
+  padding: 8px 0px;
+	background: #fff;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+#menu a{
+	opacity: 1;
+	color: #000;
+	text-decoration: none;
+}
+
+#menu a:hover{
+	opacity: .3;
+	color: #000;
+}
+
+#dropbox, #photobox, #welcome_mat  {
+  width: 490px;
+	border-top-width: 4px;
+	border-bottom-width: 4px;
+	border-top-style: double;
+	border-bottom-style: double;
+  border-top-color: #000;
+  border-bottom-color: #000;
+	background: #fff;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: 700; 
+}
+
+#welcome_mat p {
+	padding:0px;
+	margin:5px;
+}
+
+
+#dropbox,#welcome_mat{
+  height: 650px;
+}
+
+#dropbox p {
+	padding:0px;
+	margin:15px;
+}
+
+#photobox a {
+	text-decoration: none;
+}
+
+#photobox img {
+	border: 1px solid #000;
+	padding: 1px;
+	margin: 1px;
+}
+
+#prog  {
+  width: 490px;
+	border-top-width: 4px;
+	border-bottom-width: 4px;
+	border-top-style: double;
+	border-bottom-style: double;
+  border-top-color: #000;
+  border-bottom-color: #000;
+	margin-top: 10px;
+	background: #fff;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: 700;
+}
+
+#dropbox.active {
+	opacity: .5;
+}
+
+h1 {
+	padding: 0px;
+	margin: 0px;
+	font-weight: 700;
+}

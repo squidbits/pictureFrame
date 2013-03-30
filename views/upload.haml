@@ -1,0 +1,21 @@
+#dropbox 
+	%p Drop an image, 
+	%p or series of images
+	%p (up to 25 at once) 
+	%p inside this box 
+	%p to upload it(them)
+	%p to the picture frame.
+
+:javascript
+	var box = document.getElementById('dropbox')
+	var log = document.getElementById('log')
+
+	var dropbox = new Dropbox(box, '/upload')
+	// Optional settings and callbacks
+	dropbox.max_size = 10 // MB
+	dropbox.max_concurrent = 25 // Do not upload more than two files at a time
+	dropbox.success = function(file, response) {
+		log.innerHTML += '<p>' + file.name + ' was successfully uploaded: ' + response + '</p>' }
+	dropbox.error = function(file, error) {
+		log.innerHTML += '<p>' + file.name + ' failed to upload: ' + error + '</p>'
+		}
