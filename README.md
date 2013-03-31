@@ -10,4 +10,4 @@ The app is pretty self contained. Just clone it to the spot you want it to live.
 
 Run the app with
 
-rackup config.ru
+    rackup config.ru
