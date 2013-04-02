@@ -1,4 +1,4 @@
 #photobox
 	- @photos.each do |p|
-		%a{:href => p}
+		%a{:href => p.sub("thumb/300/","")}
 			=img(p)

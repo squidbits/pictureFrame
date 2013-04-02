@@ -24,7 +24,7 @@ body {
 }
 
 #menu {
-  width: 520px;
+  width: 660px;
 	border-top-width: 4px;
 	border-bottom-width: 4px;
 	border-top-style: double;
@@ -50,7 +50,7 @@ body {
 }
 
 #dropbox, #photobox, #welcome_mat  {
-  width: 490px;
+  width: 660px;
 	border-top-width: 4px;
 	border-bottom-width: 4px;
 	border-top-style: double;
@@ -58,9 +58,15 @@ body {
   border-top-color: #000;
   border-bottom-color: #000;
 	background: #fff;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 0px;
 	font-weight: 700; 
+}
+
+#img_box {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	width: 310px;
 }
 
 #welcome_mat p {
@@ -84,8 +90,9 @@ body {
 
 #photobox img {
 	border: 1px solid #000;
-	padding: 1px;
-	margin: 1px;
+	padding: 2px;
+	margin: 2px;
+	vertical-align: middle;
 }
 
 #prog  {
@@ -105,6 +112,10 @@ body {
 
 #dropbox.active {
 	opacity: .5;
+}
+
+#deadspace {
+	height: 200px;
 }
 
 h1 {

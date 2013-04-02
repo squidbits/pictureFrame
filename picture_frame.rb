@@ -23,6 +23,10 @@ class PictureFrame < Sinatra::Base
     def img(name)
       "<img src='#{name}' alt='#{name}' />" 
     end
+    
+    class Photo
+      @file_path
+    end
   end
 
 	get '/' do
@@ -34,6 +38,8 @@ class PictureFrame < Sinatra::Base
   end
   
 	post '/upload' do
+    @photo = []
+    #@photo.file_path = "public/uploads/#{params[:filename]}"
     File.open("public/uploads/#{params[:filename]}", 'w') do |f|
       f.puts Base64.decode64(params[:data])
     end
@@ -48,7 +54,7 @@ class PictureFrame < Sinatra::Base
 	end
   
   get '/gallery' do
-    @photos = Dir["public/uploads/thumb/100/*"]
+    @photos = Dir["public/uploads/thumb/300/*"]
     @photos.each do |g|
       g.sub!("public/","")
     end
