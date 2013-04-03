@@ -1,0 +1,9 @@
+public/uploads/*.jpg
+public/uploads/*.png
+public/uploads/thumb/100/*.jpg
+public/uploads/thumb/100/*.png
+public/uploads/thumb/300/*.jpg
+public/uploads/thumb/300/*.png
+public/uploads/thumb/500/*.jpg
+public/uploads/thumb/500/*.png
+!.gitignore
