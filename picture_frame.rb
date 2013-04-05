@@ -5,7 +5,6 @@ require 'rmagick'
 require 'erb'
 require 'base64'
 
-
 class PictureFrame < Sinatra::Base
 	register Sinatra::Reloader
 
@@ -22,10 +21,6 @@ class PictureFrame < Sinatra::Base
     
     def img(name)
       "<img src='#{name}' alt='#{name}' />" 
-    end
-    
-    class Photo
-      @file_path
     end
   end
 
@@ -59,5 +54,5 @@ class PictureFrame < Sinatra::Base
       g.sub!("public/","")
     end
     haml :gallery
-  end 
+  end
 end
